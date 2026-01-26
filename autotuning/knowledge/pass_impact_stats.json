@@ -1,0 +1,541 @@
+{
+  "--load-store-vectorizer": {
+    "average_benefit": 3842.572,
+    "total_benefit": 883791.56,
+    "frequency": 230,
+    "positive_rate": 0.9261,
+    "negative_rate": 0.0609
+  },
+  "--reassociate": {
+    "average_benefit": 2744.684465,
+    "total_benefit": 883788.3978,
+    "frequency": 322,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--break-crit-edges": {
+    "average_benefit": 2236.835152,
+    "total_benefit": 709076.7432,
+    "frequency": 317,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--gvn": {
+    "average_benefit": 689.3441,
+    "total_benefit": 929235.8474,
+    "frequency": 1348,
+    "positive_rate": 0.9955,
+    "negative_rate": 0.0045
+  },
+  "--ipsccp": {
+    "average_benefit": 172.529183,
+    "total_benefit": 114386.848,
+    "frequency": 663,
+    "positive_rate": 0.9925,
+    "negative_rate": 0.0075
+  },
+  "--simplifycfg": {
+    "average_benefit": 166.127256,
+    "total_benefit": 377274.9982,
+    "frequency": 2271,
+    "positive_rate": 0.9996,
+    "negative_rate": 0.0004
+  },
+  "--instcombine": {
+    "average_benefit": 108.257929,
+    "total_benefit": 588490.0994,
+    "frequency": 5436,
+    "positive_rate": 0.9961,
+    "negative_rate": 0.0033
+  },
+  "--elim-avail-extern": {
+    "average_benefit": 0.438276,
+    "total_benefit": 598.2473,
+    "frequency": 1365,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--hotcoldsplit": {
+    "average_benefit": 0.331232,
+    "total_benefit": 14.9054,
+    "frequency": 45,
+    "positive_rate": 0.9333,
+    "negative_rate": 0.0222
+  },
+  "--partial-inliner": {
+    "average_benefit": 0.296246,
+    "total_benefit": 26.6622,
+    "frequency": 90,
+    "positive_rate": 0.9889,
+    "negative_rate": 0.0111
+  },
+  "--constmerge": {
+    "average_benefit": 0.232679,
+    "total_benefit": 13.2627,
+    "frequency": 57,
+    "positive_rate": 0.9825,
+    "negative_rate": 0.0175
+  },
+  "--div-rem-pairs": {
+    "average_benefit": 0.197881,
+    "total_benefit": 13.6538,
+    "frequency": 69,
+    "positive_rate": 0.971,
+    "negative_rate": 0.0
+  },
+  "--globaldce": {
+    "average_benefit": 0.187989,
+    "total_benefit": 9.7754,
+    "frequency": 52,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--prune-eh": {
+    "average_benefit": 0.181471,
+    "total_benefit": 7.8032,
+    "frequency": 43,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--loop-unroll": {
+    "average_benefit": 0.125403,
+    "total_benefit": 9.029,
+    "frequency": 72,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--adce": {
+    "average_benefit": 0.121454,
+    "total_benefit": 1.5789,
+    "frequency": 13,
+    "positive_rate": 0.8462,
+    "negative_rate": 0.1538
+  },
+  "--sroa": {
+    "average_benefit": 0.117889,
+    "total_benefit": 172.4709,
+    "frequency": 1463,
+    "positive_rate": 0.9979,
+    "negative_rate": 0.0021
+  },
+  "--mem2reg": {
+    "average_benefit": 0.116161,
+    "total_benefit": 183.7664,
+    "frequency": 1582,
+    "positive_rate": 0.9987,
+    "negative_rate": 0.0013
+  },
+  "--inline": {
+    "average_benefit": 0.116058,
+    "total_benefit": 463.8833,
+    "frequency": 3997,
+    "positive_rate": 0.9932,
+    "negative_rate": 0.0053
+  },
+  "--lowerinvoke": {
+    "average_benefit": 0.111307,
+    "total_benefit": 12.689,
+    "frequency": 114,
+    "positive_rate": 0.9474,
+    "negative_rate": 0.0351
+  },
+  "--ipconstprop": {
+    "average_benefit": 0.110652,
+    "total_benefit": 16.8192,
+    "frequency": 152,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--reg2mem": {
+    "average_benefit": 0.101285,
+    "total_benefit": 109.7929,
+    "frequency": 1084,
+    "positive_rate": 0.9991,
+    "negative_rate": 0.0009
+  },
+  "--globalopt": {
+    "average_benefit": 0.095623,
+    "total_benefit": 14.0565,
+    "frequency": 147,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--newgvn": {
+    "average_benefit": 0.084209,
+    "total_benefit": 164.2075,
+    "frequency": 1950,
+    "positive_rate": 0.9995,
+    "negative_rate": 0.0005
+  },
+  "--scalarizer": {
+    "average_benefit": 0.077589,
+    "total_benefit": 4.7329,
+    "frequency": 61,
+    "positive_rate": 0.7213,
+    "negative_rate": 0.2295
+  },
+  "--early-cse-memssa": {
+    "average_benefit": 0.074278,
+    "total_benefit": 92.4761,
+    "frequency": 1245,
+    "positive_rate": 0.9984,
+    "negative_rate": 0.0016
+  },
+  "--slp-vectorizer": {
+    "average_benefit": 0.073207,
+    "total_benefit": 6.5155,
+    "frequency": 89,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--mergefunc": {
+    "average_benefit": 0.069256,
+    "total_benefit": 51.4573,
+    "frequency": 743,
+    "positive_rate": 0.9744,
+    "negative_rate": 0.0215
+  },
+  "--licm": {
+    "average_benefit": 0.069206,
+    "total_benefit": 39.309,
+    "frequency": 568,
+    "positive_rate": 0.9701,
+    "negative_rate": 0.0211
+  },
+  "--tailcallelim": {
+    "average_benefit": 0.066606,
+    "total_benefit": 443.7292,
+    "frequency": 6662,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--loweratomic": {
+    "average_benefit": 0.065499,
+    "total_benefit": 1.7685,
+    "frequency": 27,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--loop-reroll": {
+    "average_benefit": 0.061813,
+    "total_benefit": 2.3489,
+    "frequency": 38,
+    "positive_rate": 0.9737,
+    "negative_rate": 0.0263
+  },
+  "--mldst-motion": {
+    "average_benefit": 0.056897,
+    "total_benefit": 1.2517,
+    "frequency": 22,
+    "positive_rate": 0.9545,
+    "negative_rate": 0.0
+  },
+  "--early-cse": {
+    "average_benefit": 0.054976,
+    "total_benefit": 124.4099,
+    "frequency": 2263,
+    "positive_rate": 0.9987,
+    "negative_rate": 0.0013
+  },
+  "--loop-idiom": {
+    "average_benefit": 0.054812,
+    "total_benefit": 0.6029,
+    "frequency": 11,
+    "positive_rate": 0.7273,
+    "negative_rate": 0.1818
+  },
+  "--loop-deletion": {
+    "average_benefit": 0.054225,
+    "total_benefit": 2.3317,
+    "frequency": 43,
+    "positive_rate": 0.8837,
+    "negative_rate": 0.0698
+  },
+  "--jump-threading": {
+    "average_benefit": 0.054021,
+    "total_benefit": 69.5255,
+    "frequency": 1287,
+    "positive_rate": 0.9977,
+    "negative_rate": 0.0016
+  },
+  "--argpromotion": {
+    "average_benefit": 0.051504,
+    "total_benefit": 0.3605,
+    "frequency": 7,
+    "positive_rate": 0.8571,
+    "negative_rate": 0.1429
+  },
+  "--loop-rotate": {
+    "average_benefit": 0.050838,
+    "total_benefit": 52.4643,
+    "frequency": 1032,
+    "positive_rate": 0.9981,
+    "negative_rate": 0.0019
+  },
+  "--float2int": {
+    "average_benefit": 0.050037,
+    "total_benefit": 0.1501,
+    "frequency": 3,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--loop-interchange": {
+    "average_benefit": 0.045473,
+    "total_benefit": 1.0004,
+    "frequency": 22,
+    "positive_rate": 0.8636,
+    "negative_rate": 0.1364
+  },
+  "--correlated-propagation": {
+    "average_benefit": 0.03669,
+    "total_benefit": 9.3926,
+    "frequency": 256,
+    "positive_rate": 0.9961,
+    "negative_rate": 0.0039
+  },
+  "--loop-versioning-licm": {
+    "average_benefit": 0.036523,
+    "total_benefit": 0.9131,
+    "frequency": 25,
+    "positive_rate": 0.92,
+    "negative_rate": 0.08
+  },
+  "-loop-reduce": {
+    "average_benefit": 0.035493,
+    "total_benefit": 9.8316,
+    "frequency": 277,
+    "positive_rate": 0.9892,
+    "negative_rate": 0.0072
+  },
+  "--indvars": {
+    "average_benefit": 0.035073,
+    "total_benefit": 39.106,
+    "frequency": 1115,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--lower-expect": {
+    "average_benefit": 0.033813,
+    "total_benefit": 0.0338,
+    "frequency": 1,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--instsimplify": {
+    "average_benefit": 0.032392,
+    "total_benefit": 0.745,
+    "frequency": 23,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--speculative-execution": {
+    "average_benefit": 0.031353,
+    "total_benefit": 4.0446,
+    "frequency": 129,
+    "positive_rate": 0.9922,
+    "negative_rate": 0.0078
+  },
+  "--loop-unswitch": {
+    "average_benefit": 0.030722,
+    "total_benefit": 1.1674,
+    "frequency": 38,
+    "positive_rate": 0.8947,
+    "negative_rate": 0.0789
+  },
+  "--nary-reassociate": {
+    "average_benefit": 0.030112,
+    "total_benefit": 2.8004,
+    "frequency": 93,
+    "positive_rate": 0.9785,
+    "negative_rate": 0.0215
+  },
+  "--irce": {
+    "average_benefit": 0.029942,
+    "total_benefit": 0.6587,
+    "frequency": 22,
+    "positive_rate": 0.9545,
+    "negative_rate": 0.0455
+  },
+  "--loop-simplifycfg": {
+    "average_benefit": 0.029201,
+    "total_benefit": 2.8617,
+    "frequency": 98,
+    "positive_rate": 0.9286,
+    "negative_rate": 0.051
+  },
+  "--loop-predication": {
+    "average_benefit": 0.027923,
+    "total_benefit": 0.6702,
+    "frequency": 24,
+    "positive_rate": 0.75,
+    "negative_rate": 0.125
+  },
+  "--lowerswitch": {
+    "average_benefit": 0.026958,
+    "total_benefit": 7.1709,
+    "frequency": 266,
+    "positive_rate": 0.9662,
+    "negative_rate": 0.0338
+  },
+  "--memcpyopt": {
+    "average_benefit": 0.026554,
+    "total_benefit": 0.2124,
+    "frequency": 8,
+    "positive_rate": 0.875,
+    "negative_rate": 0.0
+  },
+  "--sink": {
+    "average_benefit": 0.026013,
+    "total_benefit": 8.6883,
+    "frequency": 334,
+    "positive_rate": 0.9521,
+    "negative_rate": 0.0389
+  },
+  "--dce": {
+    "average_benefit": 0.025043,
+    "total_benefit": 0.0751,
+    "frequency": 3,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--gvn-hoist": {
+    "average_benefit": 0.024933,
+    "total_benefit": 37.4998,
+    "frequency": 1504,
+    "positive_rate": 0.9973,
+    "negative_rate": 0.0013
+  },
+  "--flattencfg": {
+    "average_benefit": 0.024523,
+    "total_benefit": 2.722,
+    "frequency": 111,
+    "positive_rate": 0.991,
+    "negative_rate": 0.009
+  },
+  "--simple-loop-unswitch": {
+    "average_benefit": 0.024176,
+    "total_benefit": 0.5077,
+    "frequency": 21,
+    "positive_rate": 0.9048,
+    "negative_rate": 0.0952
+  },
+  "--loop-vectorize": {
+    "average_benefit": 0.023881,
+    "total_benefit": 0.5015,
+    "frequency": 21,
+    "positive_rate": 0.8571,
+    "negative_rate": 0.1429
+  },
+  "--loop-guard-widening": {
+    "average_benefit": 0.022948,
+    "total_benefit": 0.3672,
+    "frequency": 16,
+    "positive_rate": 0.8125,
+    "negative_rate": 0.125
+  },
+  "--slsr": {
+    "average_benefit": 0.02264,
+    "total_benefit": 0.6339,
+    "frequency": 28,
+    "positive_rate": 0.9643,
+    "negative_rate": 0.0357
+  },
+  "--loop-instsimplify": {
+    "average_benefit": 0.020259,
+    "total_benefit": 0.5673,
+    "frequency": 28,
+    "positive_rate": 0.8929,
+    "negative_rate": 0.0714
+  },
+  "--bdce": {
+    "average_benefit": 0.018295,
+    "total_benefit": 0.3293,
+    "frequency": 18,
+    "positive_rate": 0.8333,
+    "negative_rate": 0.1111
+  },
+  "--deadargelim": {
+    "average_benefit": 0.017886,
+    "total_benefit": 8.6745,
+    "frequency": 485,
+    "positive_rate": 0.9959,
+    "negative_rate": 0.0041
+  },
+  "--lcssa": {
+    "average_benefit": 0.017538,
+    "total_benefit": 0.1754,
+    "frequency": 10,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--loop-sink": {
+    "average_benefit": 0.016456,
+    "total_benefit": 1.0696,
+    "frequency": 65,
+    "positive_rate": 0.2615,
+    "negative_rate": 0.6462
+  },
+  "--loop-unroll-and-jam": {
+    "average_benefit": 0.016232,
+    "total_benefit": 0.3246,
+    "frequency": 20,
+    "positive_rate": 0.9,
+    "negative_rate": 0.1
+  },
+  "--loop-fusion": {
+    "average_benefit": 0.015479,
+    "total_benefit": 0.031,
+    "frequency": 2,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--dse": {
+    "average_benefit": 0.012015,
+    "total_benefit": 1.8864,
+    "frequency": 157,
+    "positive_rate": 0.9618,
+    "negative_rate": 0.0318
+  },
+  "--aggressive-instcombine": {
+    "average_benefit": 0.008742,
+    "total_benefit": 0.542,
+    "frequency": 62,
+    "positive_rate": 0.9516,
+    "negative_rate": 0.0323
+  },
+  "--strip": {
+    "average_benefit": 0.008616,
+    "total_benefit": 0.0948,
+    "frequency": 11,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--strip-nondebug": {
+    "average_benefit": 0.008284,
+    "total_benefit": 0.1905,
+    "frequency": 23,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--loop-simplify": {
+    "average_benefit": 0.00495,
+    "total_benefit": 0.0248,
+    "frequency": 5,
+    "positive_rate": 1.0,
+    "negative_rate": 0.0
+  },
+  "--mergereturn": {
+    "average_benefit": 0.003812,
+    "total_benefit": 0.0839,
+    "frequency": 22,
+    "positive_rate": 0.9545,
+    "negative_rate": 0.0
+  },
+  "--die": {
+    "average_benefit": 0.001085,
+    "total_benefit": 0.0889,
+    "frequency": 82,
+    "positive_rate": 0.0854,
+    "negative_rate": 0.7683
+  }
+}

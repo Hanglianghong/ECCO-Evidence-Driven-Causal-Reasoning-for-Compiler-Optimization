@@ -1,0 +1,197 @@
+{
+    "Cleanup_DCE": {
+      "description": "消除无效代码和死代码，减小 IR 体积",
+      "passes": [
+        "--adce",
+        "--bdce",
+        "--dce",
+        "--globaldce",
+        "--deadargelim",
+        "--die",
+        "--strip",
+        "--strip-dead-prototypes",
+        "--strip-debug-declare",
+        "--strip-nondebug",
+        "--redundant-dbg-inst-elim"
+      ]
+    },
+    "Cleanup_CFG": {
+      "description": "简化控制流图，消除不可达分支，合并基本块",
+      "passes": [
+        "--simplifycfg",
+        "--break-crit-edges",
+        "--flattencfg",
+        "--jump-threading",
+        "--lowerswitch",
+        "--mergereturn",
+        "--prune-eh",
+        "--tailcallelim",
+        "--callsite-splitting",
+        "--lowerinvoke",
+        "--lower-expect",
+        "--lower-widenable-condition",
+        "--sink",
+        "--lcssa"
+      ]
+    },
+    "Scalar_InstCombine": {
+      "description": "代数化简与指令合并，降低指令开销",
+      "passes": [
+        "--instcombine",
+        "--aggressive-instcombine",
+        "--instsimplify",
+        "--reassociate",
+        "--div-rem-pairs",
+        "--float2int",
+        "--libcalls-shrinkwrap",
+        "--lower-constant-intrinsics",
+        "--lower-matrix-intrinsics"
+      ]
+    },
+    "Scalar_Propagation": {
+      "description": "常量传播与值推导，替换已知值",
+      "passes": [
+        "--constprop",
+        "--sccp",
+        "--ipsccp",
+        "--ipconstprop",
+        "--correlated-propagation",
+        "--called-value-propagation",
+        "--infer-address-spaces",
+        "--inferattrs"
+      ]
+    },
+    "Memory_Promotion": {
+      "description": "将内存访问提升到寄存器 (SSA构建的关键)",
+      "passes": [
+        "--mem2reg",
+        "--sroa",
+        "--reg2mem",
+        "--alignment-from-assumptions"
+      ]
+    },
+    "Memory_Redundancy": {
+      "description": "消除冗余的内存读写操作",
+      "passes": [
+        "--gvn",
+        "--newgvn",
+        "--gvn-hoist",
+        "--early-cse",
+        "--early-cse-memssa",
+        "--elim-avail-extern",
+        "--dse",
+        "--memcpyopt",
+        "--mldst-motion",
+        "--pgo-memop-opt",
+        "--rpo-functionattrs",
+        "--separate-const-offset-from-gep"
+      ]
+    },
+    "Loop_Canonicalization": {
+      "description": "循环结构规范化，为高级循环优化做准备",
+      "passes": [
+        "--loop-simplify",
+        "--loop-simplifycfg",
+        "--loop-rotate",
+        "--indvars",
+        "--loop-deletion",
+        "--loop-idiom",
+        "--loop-instsimplify",
+        "--loop-guard-widening",
+        "--guard-widening",
+        "--irce",
+        "--loop-unswitch",
+        "--simple-loop-unswitch"
+      ]
+    },
+    "Loop_Motion": {
+      "description": "循环不变量外提与代码下沉",
+      "passes": [
+        "--licm",
+        "--loop-sink",
+        "-loop-reduce",
+        "--loop-load-elim",
+        "--loop-data-prefetch"
+      ]
+    },
+    "Loop_Vectorization": {
+      "description": "利用 SIMD 指令进行并行化 (高性能关键)",
+      "passes": [
+        "--loop-vectorize",
+        "--slp-vectorizer",
+        "--load-store-vectorizer",
+        "--loop-versioning",
+        "--loop-versioning-licm",
+        "--loop-distribute",
+        "--loop-fusion",
+        "--loop-interchange"
+      ]
+    },
+    "Loop_Unroll": {
+      "description": "循环展开，以空间换时间",
+      "passes": [
+        "--loop-unroll",
+        "--loop-unroll-and-jam",
+        "--loop-reroll",
+        "--loop-predication"
+      ]
+    },
+    "IPO_Inlining": {
+      "description": "函数内联与过程间优化",
+      "passes": [
+        "--inline",
+        "--always-inline",
+        "--partial-inliner",
+        "--partially-inline-libcalls",
+        "--argpromotion",
+        "--hotcoldsplit",
+        "--attributor",
+        "--forceattrs",
+        "--functionattrs",
+        "--cross-dso-cfi"
+      ]
+    },
+    "IPO_Global_Layout": {
+      "description": "全局变量与函数布局优化",
+      "passes": [
+        "--globalopt",
+        "--globalsplit",
+        "--constmerge",
+        "--consthoist",
+        "--mergefunc",
+        "--mergeicmps",
+        "--name-anon-globals",
+        "--rel-lookup-table-converter"
+      ]
+    },
+    "Coroutines": {
+      "description": "协程专用优化",
+      "passes": [
+        "--coro-cleanup",
+        "--coro-early",
+        "--coro-elide",
+        "--coro-split"
+      ]
+    },
+    "Instrumentation_Debug": {
+      "description": "插桩、调试与辅助功能 (通常不增加性能)",
+      "passes": [
+        "--add-discriminators",
+        "--barrier",
+        "--ee-instrument",
+        "--post-inline-ee-instrument",
+        "--insert-gcov-profiling",
+        "--sancov",
+        "--instnamer",
+        "--loweratomic",
+        "--lower-guard-intrinsic",
+        "--rewrite-statepoints-for-gc",
+        "--scalarizer",
+        "--speculative-execution",
+        "--slsr",
+        "--nary-reassociate",
+        "--inject-tli-mappings",
+        "--canonicalize-aliases"
+      ]
+    }
+  }

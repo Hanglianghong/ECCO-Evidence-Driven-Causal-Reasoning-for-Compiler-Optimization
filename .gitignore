@@ -1,0 +1,10 @@
+outputs/
+wandb/
+__pycache__/
+ignore/
+checkpoint*/
+.history/
+envs/
+model_save/
+
+*.txt
