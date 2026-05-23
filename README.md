@@ -58,7 +58,7 @@ bash infer_vllm_serve.sh
 ```bash
 bash infer_run.sh
 ```
-## LLM-as-a-Refiner
+## Autotuning
 
 After Inference your models, follow these steps to improve the sequences
 
